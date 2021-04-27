@@ -1,0 +1,5 @@
+html, body, #root {
+  margin: 0;
+  background: #313131;
+  height: 100%;
+}
