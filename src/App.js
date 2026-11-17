@@ -54,7 +54,7 @@ const App = () => {
   useEffect(() => {
 
     if(hitBottom && needMoreSearch) {
-      const api_url = 'https://kimhwan.kr/api/naver_image_search?display=100&query=' + encodeURI(searchText) + '&start=' + (lastStart + 100);
+      const api_url = 'https://kimhwan.com/api/naver_image_search?display=100&query=' + encodeURI(searchText) + '&start=' + (lastStart + 100);
       const options = {
         url: api_url,
         method: 'GET'
@@ -86,7 +86,7 @@ const App = () => {
   const handleSearch = () => {
     if(searchText !== lastSearchText) {
       setLastSearchText(searchText);
-      const api_url = 'https://kimhwan.kr/api/naver_image_search?display=100&query=' + encodeURI(searchText) + '&start=' + 1;
+      const api_url = 'https://kimhwan.com/api/naver_image_search?display=100&query=' + encodeURI(searchText) + '&start=' + 1;
       const options = {
         url: api_url,
         method: 'GET'
